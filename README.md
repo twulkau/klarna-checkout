@@ -20,11 +20,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/twulkau/.git"
+      "url": "https://github.com/twulkau/klarna-checkout.git"
     }
   ],
   "require": {
-    "twulkau/": "*@dev"
+    "twulkau/klarna-checkout": "*@dev"
   }
 }
 ```
