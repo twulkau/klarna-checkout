@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\;
+namespace Klarna;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
