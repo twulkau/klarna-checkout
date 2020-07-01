@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\Model;
+namespace Klarna\Checkout\Model;
 
 use \ArrayAccess;
-use \Klarna\ObjectSerializer;
+use \Klarna\Checkout\ObjectSerializer;
 
 /**
  * Options Class Doc Comment
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -68,14 +68,14 @@ class Options implements ModelInterface, ArrayAccess
         'date_of_birth_mandatory' => 'bool',
         'shipping_details' => 'string',
         'title_mandatory' => 'bool',
-        'additional_checkbox' => '\Klarna\Model\Checkbox',
+        'additional_checkbox' => '\Klarna\Checkout\Model\Checkbox',
         'national_identification_number_mandatory' => 'bool',
         'additional_merchant_terms' => 'string',
         'phone_mandatory' => 'bool',
         'radius_border' => 'string',
         'allowed_customer_types' => 'string[]',
         'show_subtotal_detail' => 'bool',
-        'additional_checkboxes' => '\Klarna\Model\CheckboxV2[]',
+        'additional_checkboxes' => '\Klarna\Checkout\Model\CheckboxV2[]',
         'require_validate_callback_success' => 'bool',
         'vat_removed' => 'bool',
         'verify_national_identification_number' => 'bool',
@@ -666,7 +666,7 @@ class Options implements ModelInterface, ArrayAccess
     /**
      * Gets additional_checkbox
      *
-     * @return \Klarna\Model\Checkbox
+     * @return \Klarna\Checkout\Model\Checkbox
      */
     public function getAdditionalCheckbox()
     {
@@ -676,7 +676,7 @@ class Options implements ModelInterface, ArrayAccess
     /**
      * Sets additional_checkbox
      *
-     * @param \Klarna\Model\Checkbox $additional_checkbox Additional merchant defined checkbox. e.g. for Newsletter opt-in.
+     * @param \Klarna\Checkout\Model\Checkbox $additional_checkbox Additional merchant defined checkbox. e.g. for Newsletter opt-in.
      *
      * @return $this
      */
@@ -834,7 +834,7 @@ class Options implements ModelInterface, ArrayAccess
     /**
      * Gets additional_checkboxes
      *
-     * @return \Klarna\Model\CheckboxV2[]
+     * @return \Klarna\Checkout\Model\CheckboxV2[]
      */
     public function getAdditionalCheckboxes()
     {
@@ -844,7 +844,7 @@ class Options implements ModelInterface, ArrayAccess
     /**
      * Sets additional_checkboxes
      *
-     * @param \Klarna\Model\CheckboxV2[] $additional_checkboxes Additional merchant defined checkboxes. e.g. for Newsletter opt-in.
+     * @param \Klarna\Checkout\Model\CheckboxV2[] $additional_checkboxes Additional merchant defined checkboxes. e.g. for Newsletter opt-in.
      *
      * @return $this
      */

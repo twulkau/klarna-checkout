@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\Model;
+namespace Klarna\Checkout\Model;
 
 use \ArrayAccess;
-use \Klarna\ObjectSerializer;
+use \Klarna\Checkout\ObjectSerializer;
 
 /**
  * PickupLocationV1 Class Doc Comment
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PickupLocationV1 implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'string',
         'name' => 'string',
-        'address' => '\Klarna\Model\Address'
+        'address' => '\Klarna\Checkout\Model\Address'
     ];
 
     /**
@@ -267,7 +267,7 @@ class PickupLocationV1 implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Klarna\Model\Address
+     * @return \Klarna\Checkout\Model\Address
      */
     public function getAddress()
     {
@@ -277,7 +277,7 @@ class PickupLocationV1 implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Klarna\Model\Address $address Location adress
+     * @param \Klarna\Checkout\Model\Address $address Location adress
      *
      * @return $this
      */

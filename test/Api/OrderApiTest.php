@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Klarna;
+namespace Klarna\Checkout;
 
-use \Klarna\Configuration;
-use \Klarna\ApiException;
-use \Klarna\ObjectSerializer;
+use \Klarna\Checkout\Configuration;
+use \Klarna\Checkout\ApiException;
+use \Klarna\Checkout\ObjectSerializer;
 
 /**
  * OrderApiTest Class Doc Comment
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **tax_rate** | **int** | Non-negative. In percent, two implicit decimals. I.e 2500 &#x3D; 25%. | 
 **preselected** | **bool** | If true, this option will be preselected when checkout loads. Default: false | [optional] [default to false]
 **shipping_method** | **string** | Shipping method. Possible values:&lt;ul&gt;&lt;li&gt;PickUpStore&lt;/li&gt;&lt;li&gt;Home&lt;/li&gt;&lt;li&gt;BoxReg&lt;/li&gt;&lt;li&gt;BoxUnreg&lt;/li&gt;&lt;li&gt;PickUpPoint&lt;/li&gt;&lt;li&gt;Own&lt;/li&gt;&lt;li&gt;Postal&lt;/li&gt;&lt;li&gt;DHLPackstation&lt;/li&gt;&lt;li&gt;Digital&lt;/li&gt;&lt;/ul&gt; If DHLPackstation is selected the correct form will be displayed. | [optional] 
-**delivery_details** | [**\Klarna\Model\DeliveryDetailsV1**](DeliveryDetailsV1.md) | The delivery details for this shipping option | [optional] 
+**delivery_details** | [**\Klarna\Checkout\Model\DeliveryDetailsV1**](DeliveryDetailsV1.md) | The delivery details for this shipping option | [optional] 
 **tms_reference** | **string** | TMS reference. Required to map completed orders to shipments reserved in TMS. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

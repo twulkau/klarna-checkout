@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\Model;
+namespace Klarna\Checkout\Model;
 
 use \ArrayAccess;
-use \Klarna\ObjectSerializer;
+use \Klarna\Checkout\ObjectSerializer;
 
 /**
  * OrderLine Class Doc Comment
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -70,8 +70,8 @@ class OrderLine implements ModelInterface, ArrayAccess
         'merchant_data' => 'string',
         'product_url' => 'string',
         'image_url' => 'string',
-        'product_identifiers' => '\Klarna\Model\ProductIdentifiers',
-        'shipping_attributes' => '\Klarna\Model\ShippingAttributes'
+        'product_identifiers' => '\Klarna\Checkout\Model\ProductIdentifiers',
+        'shipping_attributes' => '\Klarna\Checkout\Model\ShippingAttributes'
     ];
 
     /**
@@ -741,7 +741,7 @@ class OrderLine implements ModelInterface, ArrayAccess
     /**
      * Gets product_identifiers
      *
-     * @return \Klarna\Model\ProductIdentifiers
+     * @return \Klarna\Checkout\Model\ProductIdentifiers
      */
     public function getProductIdentifiers()
     {
@@ -751,7 +751,7 @@ class OrderLine implements ModelInterface, ArrayAccess
     /**
      * Sets product_identifiers
      *
-     * @param \Klarna\Model\ProductIdentifiers $product_identifiers Additional information identifying an item
+     * @param \Klarna\Checkout\Model\ProductIdentifiers $product_identifiers Additional information identifying an item
      *
      * @return $this
      */
@@ -765,7 +765,7 @@ class OrderLine implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_attributes
      *
-     * @return \Klarna\Model\ShippingAttributes
+     * @return \Klarna\Checkout\Model\ShippingAttributes
      */
     public function getShippingAttributes()
     {
@@ -775,7 +775,7 @@ class OrderLine implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_attributes
      *
-     * @param \Klarna\Model\ShippingAttributes $shipping_attributes Shipping attributes of an item
+     * @param \Klarna\Checkout\Model\ShippingAttributes $shipping_attributes Shipping attributes of an item
      *
      * @return $this
      */

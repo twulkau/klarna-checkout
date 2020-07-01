@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\Model;
+namespace Klarna\Checkout\Model;
 
 use \ArrayAccess;
-use \Klarna\ObjectSerializer;
+use \Klarna\Checkout\ObjectSerializer;
 
 /**
  * ShippingOption Class Doc Comment
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,7 +66,7 @@ class ShippingOption implements ModelInterface, ArrayAccess
         'tax_rate' => 'int',
         'preselected' => 'bool',
         'shipping_method' => 'string',
-        'delivery_details' => '\Klarna\Model\DeliveryDetailsV1',
+        'delivery_details' => '\Klarna\Checkout\Model\DeliveryDetailsV1',
         'tms_reference' => 'string'
     ];
 
@@ -513,7 +513,7 @@ class ShippingOption implements ModelInterface, ArrayAccess
     /**
      * Gets delivery_details
      *
-     * @return \Klarna\Model\DeliveryDetailsV1
+     * @return \Klarna\Checkout\Model\DeliveryDetailsV1
      */
     public function getDeliveryDetails()
     {
@@ -523,7 +523,7 @@ class ShippingOption implements ModelInterface, ArrayAccess
     /**
      * Sets delivery_details
      *
-     * @param \Klarna\Model\DeliveryDetailsV1 $delivery_details The delivery details for this shipping option
+     * @param \Klarna\Checkout\Model\DeliveryDetailsV1 $delivery_details The delivery details for this shipping option
      *
      * @return $this
      */

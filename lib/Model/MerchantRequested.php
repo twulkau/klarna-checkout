@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\Model;
+namespace Klarna\Checkout\Model;
 
 use \ArrayAccess;
-use \Klarna\ObjectSerializer;
+use \Klarna\Checkout\ObjectSerializer;
 
 /**
  * MerchantRequested Class Doc Comment
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class MerchantRequested implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'additional_checkbox' => 'bool',
-        'additional_checkboxes' => '\Klarna\Model\MerchantRequestedCheckbox[]'
+        'additional_checkboxes' => '\Klarna\Checkout\Model\MerchantRequestedCheckbox[]'
     ];
 
     /**
@@ -237,7 +237,7 @@ class MerchantRequested implements ModelInterface, ArrayAccess
     /**
      * Gets additional_checkboxes
      *
-     * @return \Klarna\Model\MerchantRequestedCheckbox[]
+     * @return \Klarna\Checkout\Model\MerchantRequestedCheckbox[]
      */
     public function getAdditionalCheckboxes()
     {
@@ -247,7 +247,7 @@ class MerchantRequested implements ModelInterface, ArrayAccess
     /**
      * Sets additional_checkboxes
      *
-     * @param \Klarna\Model\MerchantRequestedCheckbox[] $additional_checkboxes Informs whether the additional_checkboxes is checked or not, when applicable.
+     * @param \Klarna\Checkout\Model\MerchantRequestedCheckbox[] $additional_checkboxes Informs whether the additional_checkboxes is checked or not, when applicable.
      *
      * @return $this
      */

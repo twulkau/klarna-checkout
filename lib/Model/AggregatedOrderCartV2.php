@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\Model;
+namespace Klarna\Checkout\Model;
 
 use \ArrayAccess;
-use \Klarna\ObjectSerializer;
+use \Klarna\Checkout\ObjectSerializer;
 
 /**
  * AggregatedOrderCartV2 Class Doc Comment
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class AggregatedOrderCartV2 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'items' => '\Klarna\Model\AggregatedOrderCartItemV2[]',
+        'items' => '\Klarna\Checkout\Model\AggregatedOrderCartItemV2[]',
         'total_price_including_tax' => 'int',
         'total_tax_amount' => 'int',
         'total_price_excluding_tax' => 'int'
@@ -225,7 +225,7 @@ class AggregatedOrderCartV2 implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Klarna\Model\AggregatedOrderCartItemV2[]
+     * @return \Klarna\Checkout\Model\AggregatedOrderCartItemV2[]
      */
     public function getItems()
     {
@@ -235,7 +235,7 @@ class AggregatedOrderCartV2 implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Klarna\Model\AggregatedOrderCartItemV2[] $items items
+     * @param \Klarna\Checkout\Model\AggregatedOrderCartItemV2[] $items items
      *
      * @return $this
      */

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**items** | [**\Klarna\Model\AggregatedOrderCartItemV2[]**](AggregatedOrderCartItemV2.md) |  | [optional] 
+**items** | [**\Klarna\Checkout\Model\AggregatedOrderCartItemV2[]**](AggregatedOrderCartItemV2.md) |  | [optional] 
 **total_price_including_tax** | **int** |  | [optional] 
 **total_tax_amount** | **int** |  | [optional] 
 **total_price_excluding_tax** | **int** |  | [optional] 

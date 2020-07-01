@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\Model;
+namespace Klarna\Checkout\Model;
 
 use \ArrayAccess;
-use \Klarna\ObjectSerializer;
+use \Klarna\Checkout\ObjectSerializer;
 
 /**
  * AggregatedOrderRequestV2 Class Doc Comment
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,12 +58,12 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'locale' => 'string',
-        'cart' => '\Klarna\Model\AggregatedOrderCartV2',
-        'customer' => '\Klarna\Model\CustomerV2',
-        'gui' => '\Klarna\Model\Gui',
-        'merchant' => '\Klarna\Model\MerchantAggregatedOrderV2',
-        'options' => '\Klarna\Model\Options',
-        'attachment' => '\Klarna\Model\Attachment',
+        'cart' => '\Klarna\Checkout\Model\AggregatedOrderCartV2',
+        'customer' => '\Klarna\Checkout\Model\CustomerV2',
+        'gui' => '\Klarna\Checkout\Model\Gui',
+        'merchant' => '\Klarna\Checkout\Model\MerchantAggregatedOrderV2',
+        'options' => '\Klarna\Checkout\Model\Options',
+        'attachment' => '\Klarna\Checkout\Model\Attachment',
         'recurring' => 'bool',
         'reservation' => 'string',
         'id' => 'string',
@@ -74,13 +74,13 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
         'purchase_country' => 'string',
         'purchase_currency' => 'string',
         'merchant_reference' => 'map[string,string]',
-        'billing_address' => '\Klarna\Model\AggregatedOrderAddressV2',
-        'shipping_address' => '\Klarna\Model\AggregatedOrderAddressV2',
+        'billing_address' => '\Klarna\Checkout\Model\AggregatedOrderAddressV2',
+        'shipping_address' => '\Klarna\Checkout\Model\AggregatedOrderAddressV2',
         'trader_id' => 'string',
-        'external_payment_methods' => '\Klarna\Model\AggregatedOrderPaymentProviderV2[]',
-        'external_checkouts' => '\Klarna\Model\AggregatedOrderPaymentProviderV2[]',
+        'external_payment_methods' => '\Klarna\Checkout\Model\AggregatedOrderPaymentProviderV2[]',
+        'external_checkouts' => '\Klarna\Checkout\Model\AggregatedOrderPaymentProviderV2[]',
         'merchant_order_data' => 'string',
-        'merchant_requested' => '\Klarna\Model\MerchantRequested'
+        'merchant_requested' => '\Klarna\Checkout\Model\MerchantRequested'
     ];
 
     /**
@@ -397,7 +397,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets cart
      *
-     * @return \Klarna\Model\AggregatedOrderCartV2
+     * @return \Klarna\Checkout\Model\AggregatedOrderCartV2
      */
     public function getCart()
     {
@@ -407,7 +407,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets cart
      *
-     * @param \Klarna\Model\AggregatedOrderCartV2 $cart cart
+     * @param \Klarna\Checkout\Model\AggregatedOrderCartV2 $cart cart
      *
      * @return $this
      */
@@ -421,7 +421,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets customer
      *
-     * @return \Klarna\Model\CustomerV2
+     * @return \Klarna\Checkout\Model\CustomerV2
      */
     public function getCustomer()
     {
@@ -431,7 +431,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets customer
      *
-     * @param \Klarna\Model\CustomerV2 $customer customer
+     * @param \Klarna\Checkout\Model\CustomerV2 $customer customer
      *
      * @return $this
      */
@@ -445,7 +445,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets gui
      *
-     * @return \Klarna\Model\Gui
+     * @return \Klarna\Checkout\Model\Gui
      */
     public function getGui()
     {
@@ -455,7 +455,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets gui
      *
-     * @param \Klarna\Model\Gui $gui gui
+     * @param \Klarna\Checkout\Model\Gui $gui gui
      *
      * @return $this
      */
@@ -469,7 +469,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets merchant
      *
-     * @return \Klarna\Model\MerchantAggregatedOrderV2
+     * @return \Klarna\Checkout\Model\MerchantAggregatedOrderV2
      */
     public function getMerchant()
     {
@@ -479,7 +479,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets merchant
      *
-     * @param \Klarna\Model\MerchantAggregatedOrderV2 $merchant merchant
+     * @param \Klarna\Checkout\Model\MerchantAggregatedOrderV2 $merchant merchant
      *
      * @return $this
      */
@@ -493,7 +493,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets options
      *
-     * @return \Klarna\Model\Options
+     * @return \Klarna\Checkout\Model\Options
      */
     public function getOptions()
     {
@@ -503,7 +503,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets options
      *
-     * @param \Klarna\Model\Options $options options
+     * @param \Klarna\Checkout\Model\Options $options options
      *
      * @return $this
      */
@@ -517,7 +517,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets attachment
      *
-     * @return \Klarna\Model\Attachment
+     * @return \Klarna\Checkout\Model\Attachment
      */
     public function getAttachment()
     {
@@ -527,7 +527,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets attachment
      *
-     * @param \Klarna\Model\Attachment $attachment attachment
+     * @param \Klarna\Checkout\Model\Attachment $attachment attachment
      *
      * @return $this
      */
@@ -791,7 +791,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets billing_address
      *
-     * @return \Klarna\Model\AggregatedOrderAddressV2
+     * @return \Klarna\Checkout\Model\AggregatedOrderAddressV2
      */
     public function getBillingAddress()
     {
@@ -801,7 +801,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets billing_address
      *
-     * @param \Klarna\Model\AggregatedOrderAddressV2 $billing_address billing_address
+     * @param \Klarna\Checkout\Model\AggregatedOrderAddressV2 $billing_address billing_address
      *
      * @return $this
      */
@@ -815,7 +815,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_address
      *
-     * @return \Klarna\Model\AggregatedOrderAddressV2
+     * @return \Klarna\Checkout\Model\AggregatedOrderAddressV2
      */
     public function getShippingAddress()
     {
@@ -825,7 +825,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_address
      *
-     * @param \Klarna\Model\AggregatedOrderAddressV2 $shipping_address shipping_address
+     * @param \Klarna\Checkout\Model\AggregatedOrderAddressV2 $shipping_address shipping_address
      *
      * @return $this
      */
@@ -863,7 +863,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets external_payment_methods
      *
-     * @return \Klarna\Model\AggregatedOrderPaymentProviderV2[]
+     * @return \Klarna\Checkout\Model\AggregatedOrderPaymentProviderV2[]
      */
     public function getExternalPaymentMethods()
     {
@@ -873,7 +873,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets external_payment_methods
      *
-     * @param \Klarna\Model\AggregatedOrderPaymentProviderV2[] $external_payment_methods external_payment_methods
+     * @param \Klarna\Checkout\Model\AggregatedOrderPaymentProviderV2[] $external_payment_methods external_payment_methods
      *
      * @return $this
      */
@@ -887,7 +887,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets external_checkouts
      *
-     * @return \Klarna\Model\AggregatedOrderPaymentProviderV2[]
+     * @return \Klarna\Checkout\Model\AggregatedOrderPaymentProviderV2[]
      */
     public function getExternalCheckouts()
     {
@@ -897,7 +897,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets external_checkouts
      *
-     * @param \Klarna\Model\AggregatedOrderPaymentProviderV2[] $external_checkouts external_checkouts
+     * @param \Klarna\Checkout\Model\AggregatedOrderPaymentProviderV2[] $external_checkouts external_checkouts
      *
      * @return $this
      */
@@ -942,7 +942,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets merchant_requested
      *
-     * @return \Klarna\Model\MerchantRequested
+     * @return \Klarna\Checkout\Model\MerchantRequested
      */
     public function getMerchantRequested()
     {
@@ -952,7 +952,7 @@ class AggregatedOrderRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets merchant_requested
      *
-     * @param \Klarna\Model\MerchantRequested $merchant_requested merchant_requested
+     * @param \Klarna\Checkout\Model\MerchantRequested $merchant_requested merchant_requested
      *
      * @return $this
      */

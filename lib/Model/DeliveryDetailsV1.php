@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\Model;
+namespace Klarna\Checkout\Model;
 
 use \ArrayAccess;
-use \Klarna\ObjectSerializer;
+use \Klarna\Checkout\ObjectSerializer;
 
 /**
  * DeliveryDetailsV1 Class Doc Comment
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,9 +59,9 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'carrier' => 'string',
         'class' => 'string',
-        'product' => '\Klarna\Model\ProductV1',
-        'pickup_location' => '\Klarna\Model\PickupLocationV1',
-        'timeslot' => '\Klarna\Model\TimeslotV1'
+        'product' => '\Klarna\Checkout\Model\ProductV1',
+        'pickup_location' => '\Klarna\Checkout\Model\PickupLocationV1',
+        'timeslot' => '\Klarna\Checkout\Model\TimeslotV1'
     ];
 
     /**
@@ -279,7 +279,7 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets product
      *
-     * @return \Klarna\Model\ProductV1
+     * @return \Klarna\Checkout\Model\ProductV1
      */
     public function getProduct()
     {
@@ -289,7 +289,7 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets product
      *
-     * @param \Klarna\Model\ProductV1 $product Upstream carrier product
+     * @param \Klarna\Checkout\Model\ProductV1 $product Upstream carrier product
      *
      * @return $this
      */
@@ -303,7 +303,7 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets pickup_location
      *
-     * @return \Klarna\Model\PickupLocationV1
+     * @return \Klarna\Checkout\Model\PickupLocationV1
      */
     public function getPickupLocation()
     {
@@ -313,7 +313,7 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets pickup_location
      *
-     * @param \Klarna\Model\PickupLocationV1 $pickup_location The selected location for this shipping option
+     * @param \Klarna\Checkout\Model\PickupLocationV1 $pickup_location The selected location for this shipping option
      *
      * @return $this
      */
@@ -327,7 +327,7 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     /**
      * Gets timeslot
      *
-     * @return \Klarna\Model\TimeslotV1
+     * @return \Klarna\Checkout\Model\TimeslotV1
      */
     public function getTimeslot()
     {
@@ -337,7 +337,7 @@ class DeliveryDetailsV1 implements ModelInterface, ArrayAccess
     /**
      * Sets timeslot
      *
-     * @param \Klarna\Model\TimeslotV1 $timeslot The selected timeslot for this shipping option
+     * @param \Klarna\Checkout\Model\TimeslotV1 $timeslot The selected timeslot for this shipping option
      *
      * @return $this
      */

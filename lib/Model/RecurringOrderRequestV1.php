@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\Model;
+namespace Klarna\Checkout\Model;
 
 use \ArrayAccess;
-use \Klarna\ObjectSerializer;
+use \Klarna\Checkout\ObjectSerializer;
 
 /**
  * RecurringOrderRequestV1 Class Doc Comment
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,13 +58,13 @@ class RecurringOrderRequestV1 implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'locale' => 'string',
-        'cart' => '\Klarna\Model\AggregatedOrderCartV2',
-        'merchant' => '\Klarna\Model\MerchantAggregatedOrderV2',
+        'cart' => '\Klarna\Checkout\Model\AggregatedOrderCartV2',
+        'merchant' => '\Klarna\Checkout\Model\MerchantAggregatedOrderV2',
         'merchant_reference' => 'map[string,string]',
         'purchase_country' => 'string',
         'purchase_currency' => 'string',
-        'billing_address' => '\Klarna\Model\AggregatedOrderAddressV2',
-        'shipping_address' => '\Klarna\Model\AggregatedOrderAddressV2'
+        'billing_address' => '\Klarna\Checkout\Model\AggregatedOrderAddressV2',
+        'shipping_address' => '\Klarna\Checkout\Model\AggregatedOrderAddressV2'
     ];
 
     /**
@@ -293,7 +293,7 @@ class RecurringOrderRequestV1 implements ModelInterface, ArrayAccess
     /**
      * Gets cart
      *
-     * @return \Klarna\Model\AggregatedOrderCartV2
+     * @return \Klarna\Checkout\Model\AggregatedOrderCartV2
      */
     public function getCart()
     {
@@ -303,7 +303,7 @@ class RecurringOrderRequestV1 implements ModelInterface, ArrayAccess
     /**
      * Sets cart
      *
-     * @param \Klarna\Model\AggregatedOrderCartV2 $cart cart
+     * @param \Klarna\Checkout\Model\AggregatedOrderCartV2 $cart cart
      *
      * @return $this
      */
@@ -317,7 +317,7 @@ class RecurringOrderRequestV1 implements ModelInterface, ArrayAccess
     /**
      * Gets merchant
      *
-     * @return \Klarna\Model\MerchantAggregatedOrderV2
+     * @return \Klarna\Checkout\Model\MerchantAggregatedOrderV2
      */
     public function getMerchant()
     {
@@ -327,7 +327,7 @@ class RecurringOrderRequestV1 implements ModelInterface, ArrayAccess
     /**
      * Sets merchant
      *
-     * @param \Klarna\Model\MerchantAggregatedOrderV2 $merchant merchant
+     * @param \Klarna\Checkout\Model\MerchantAggregatedOrderV2 $merchant merchant
      *
      * @return $this
      */
@@ -423,7 +423,7 @@ class RecurringOrderRequestV1 implements ModelInterface, ArrayAccess
     /**
      * Gets billing_address
      *
-     * @return \Klarna\Model\AggregatedOrderAddressV2
+     * @return \Klarna\Checkout\Model\AggregatedOrderAddressV2
      */
     public function getBillingAddress()
     {
@@ -433,7 +433,7 @@ class RecurringOrderRequestV1 implements ModelInterface, ArrayAccess
     /**
      * Sets billing_address
      *
-     * @param \Klarna\Model\AggregatedOrderAddressV2 $billing_address billing_address
+     * @param \Klarna\Checkout\Model\AggregatedOrderAddressV2 $billing_address billing_address
      *
      * @return $this
      */
@@ -447,7 +447,7 @@ class RecurringOrderRequestV1 implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_address
      *
-     * @return \Klarna\Model\AggregatedOrderAddressV2
+     * @return \Klarna\Checkout\Model\AggregatedOrderAddressV2
      */
     public function getShippingAddress()
     {
@@ -457,7 +457,7 @@ class RecurringOrderRequestV1 implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_address
      *
-     * @param \Klarna\Model\AggregatedOrderAddressV2 $shipping_address shipping_address
+     * @param \Klarna\Checkout\Model\AggregatedOrderAddressV2 $shipping_address shipping_address
      *
      * @return $this
      */

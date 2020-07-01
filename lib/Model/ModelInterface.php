@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna\Model
+ * @package  Klarna\Checkout\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\Model;
+namespace Klarna\Checkout\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package Klarna\Model
+ * @package Klarna\Checkout\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

@@ -16,8 +16,8 @@ Name | Type | Description | Notes
 **merchant_data** | **string** | Property used to store additional metadata per item that will be returned whenever an order is read from Klarna. Pass through field. (max 1024 characters). | [optional] 
 **product_url** | **string** | URL to the product page that can be later embedded in communications between Klarna and the customer. (max 1024 characters) | [optional] 
 **image_url** | **string** | URL to an image that can be later embedded in communications between Klarna and the customer. (max 1024 characters)  Improves post-purchase customer experiences. | [optional] 
-**product_identifiers** | [**\Klarna\Model\ProductIdentifiers**](ProductIdentifiers.md) | Additional information identifying an item | [optional] 
-**shipping_attributes** | [**\Klarna\Model\ShippingAttributes**](ShippingAttributes.md) | Shipping attributes of an item | [optional] 
+**product_identifiers** | [**\Klarna\Checkout\Model\ProductIdentifiers**](ProductIdentifiers.md) | Additional information identifying an item | [optional] 
+**shipping_attributes** | [**\Klarna\Checkout\Model\ShippingAttributes**](ShippingAttributes.md) | Shipping attributes of an item | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

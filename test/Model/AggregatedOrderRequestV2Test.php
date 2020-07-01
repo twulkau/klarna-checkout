@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,14 +27,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Klarna;
+namespace Klarna\Checkout;
 
 /**
  * AggregatedOrderRequestV2Test Class Doc Comment
  *
  * @category    Class
  * @description AggregatedOrderRequestV2
- * @package     Klarna
+ * @package     Klarna\Checkout
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

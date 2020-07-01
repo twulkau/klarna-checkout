@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\Model;
+namespace Klarna\Checkout\Model;
 
 use \ArrayAccess;
-use \Klarna\ObjectSerializer;
+use \Klarna\Checkout\ObjectSerializer;
 
 /**
  * Order Class Doc Comment
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,29 +63,29 @@ class Order implements ModelInterface, ArrayAccess
         'purchase_currency' => 'string',
         'locale' => 'string',
         'status' => 'string',
-        'billing_address' => '\Klarna\Model\Address',
-        'shipping_address' => '\Klarna\Model\Address',
+        'billing_address' => '\Klarna\Checkout\Model\Address',
+        'shipping_address' => '\Klarna\Checkout\Model\Address',
         'order_amount' => 'int',
         'order_tax_amount' => 'int',
-        'order_lines' => '\Klarna\Model\OrderLine[]',
-        'customer' => '\Klarna\Model\Customer',
-        'merchant_urls' => '\Klarna\Model\MerchantUrls',
+        'order_lines' => '\Klarna\Checkout\Model\OrderLine[]',
+        'customer' => '\Klarna\Checkout\Model\Customer',
+        'merchant_urls' => '\Klarna\Checkout\Model\MerchantUrls',
         'html_snippet' => 'string',
         'merchant_reference1' => 'string',
         'merchant_reference2' => 'string',
         'started_at' => '\DateTime',
         'completed_at' => '\DateTime',
         'last_modified_at' => '\DateTime',
-        'options' => '\Klarna\Model\Options',
-        'attachment' => '\Klarna\Model\Attachment',
-        'external_payment_methods' => '\Klarna\Model\PaymentProvider[]',
-        'external_checkouts' => '\Klarna\Model\PaymentProvider[]',
+        'options' => '\Klarna\Checkout\Model\Options',
+        'attachment' => '\Klarna\Checkout\Model\Attachment',
+        'external_payment_methods' => '\Klarna\Checkout\Model\PaymentProvider[]',
+        'external_checkouts' => '\Klarna\Checkout\Model\PaymentProvider[]',
         'shipping_countries' => 'string[]',
-        'shipping_options' => '\Klarna\Model\ShippingOption[]',
+        'shipping_options' => '\Klarna\Checkout\Model\ShippingOption[]',
         'merchant_data' => 'string',
-        'gui' => '\Klarna\Model\Gui',
-        'merchant_requested' => '\Klarna\Model\MerchantRequested',
-        'selected_shipping_option' => '\Klarna\Model\ShippingOption',
+        'gui' => '\Klarna\Checkout\Model\Gui',
+        'merchant_requested' => '\Klarna\Checkout\Model\MerchantRequested',
+        'selected_shipping_option' => '\Klarna\Checkout\Model\ShippingOption',
         'recurring' => 'bool',
         'recurring_token' => 'string',
         'recurring_description' => 'string',
@@ -637,7 +637,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets billing_address
      *
-     * @return \Klarna\Model\Address
+     * @return \Klarna\Checkout\Model\Address
      */
     public function getBillingAddress()
     {
@@ -647,7 +647,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets billing_address
      *
-     * @param \Klarna\Model\Address $billing_address Provide the billing address of the customer, if you have collected already. If not, then Klarna will collect the details inside the Klarna Checkout iFrame before authorization. The billing address is the 'home address' where the credit cards and bank accounts are registered under the customer's name.  Note: Once the customer has provided any data in the checkout iframe, updates to this object will be ignored (without generating an error).
+     * @param \Klarna\Checkout\Model\Address $billing_address Provide the billing address of the customer, if you have collected already. If not, then Klarna will collect the details inside the Klarna Checkout iFrame before authorization. The billing address is the 'home address' where the credit cards and bank accounts are registered under the customer's name.  Note: Once the customer has provided any data in the checkout iframe, updates to this object will be ignored (without generating an error).
      *
      * @return $this
      */
@@ -661,7 +661,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_address
      *
-     * @return \Klarna\Model\Address
+     * @return \Klarna\Checkout\Model\Address
      */
     public function getShippingAddress()
     {
@@ -671,7 +671,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_address
      *
-     * @param \Klarna\Model\Address $shipping_address Provide the shipping address of the customer, if you have collected already. Unless the customer has explicitly chosen to enter a separate shipping address, this is a clone of billing_address. The customer has the possibility of changing the shipping address inside the Klarna checkout. You will be notified about the change either through the merchant URLs that you provide or through Javascript callbacks.
+     * @param \Klarna\Checkout\Model\Address $shipping_address Provide the shipping address of the customer, if you have collected already. Unless the customer has explicitly chosen to enter a separate shipping address, this is a clone of billing_address. The customer has the possibility of changing the shipping address inside the Klarna checkout. You will be notified about the change either through the merchant URLs that you provide or through Javascript callbacks.
      *
      * @return $this
      */
@@ -743,7 +743,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets order_lines
      *
-     * @return \Klarna\Model\OrderLine[]
+     * @return \Klarna\Checkout\Model\OrderLine[]
      */
     public function getOrderLines()
     {
@@ -753,7 +753,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets order_lines
      *
-     * @param \Klarna\Model\OrderLine[] $order_lines An array containing list of line items that are part of this order. Maximum of 1000 line items could be processed in a single order.
+     * @param \Klarna\Checkout\Model\OrderLine[] $order_lines An array containing list of line items that are part of this order. Maximum of 1000 line items could be processed in a single order.
      *
      * @return $this
      */
@@ -767,7 +767,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets customer
      *
-     * @return \Klarna\Model\Customer
+     * @return \Klarna\Checkout\Model\Customer
      */
     public function getCustomer()
     {
@@ -777,7 +777,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets customer
      *
-     * @param \Klarna\Model\Customer $customer Object to provide the details of the customer making the payment.
+     * @param \Klarna\Checkout\Model\Customer $customer Object to provide the details of the customer making the payment.
      *
      * @return $this
      */
@@ -791,7 +791,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets merchant_urls
      *
-     * @return \Klarna\Model\MerchantUrls
+     * @return \Klarna\Checkout\Model\MerchantUrls
      */
     public function getMerchantUrls()
     {
@@ -801,7 +801,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets merchant_urls
      *
-     * @param \Klarna\Model\MerchantUrls $merchant_urls Used to send in the different merchant URLs that Klarna needs at different stages of the process.  Note: it should be HTTPS. Also, it can have {checkout.order.id}, {checkout.order.url} and/or {checkout.order.uri} and KCO will replace it accordingly.
+     * @param \Klarna\Checkout\Model\MerchantUrls $merchant_urls Used to send in the different merchant URLs that Klarna needs at different stages of the process.  Note: it should be HTTPS. Also, it can have {checkout.order.id}, {checkout.order.url} and/or {checkout.order.uri} and KCO will replace it accordingly.
      *
      * @return $this
      */
@@ -973,7 +973,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets options
      *
-     * @return \Klarna\Model\Options
+     * @return \Klarna\Checkout\Model\Options
      */
     public function getOptions()
     {
@@ -983,7 +983,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets options
      *
-     * @param \Klarna\Model\Options $options Customization options for the order.
+     * @param \Klarna\Checkout\Model\Options $options Customization options for the order.
      *
      * @return $this
      */
@@ -997,7 +997,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets attachment
      *
-     * @return \Klarna\Model\Attachment
+     * @return \Klarna\Checkout\Model\Attachment
      */
     public function getAttachment()
     {
@@ -1007,7 +1007,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets attachment
      *
-     * @param \Klarna\Model\Attachment $attachment Extra Merchant Data (additional information) required for additional risk check. The required parameters will be described in the appendix of contract agreement.
+     * @param \Klarna\Checkout\Model\Attachment $attachment Extra Merchant Data (additional information) required for additional risk check. The required parameters will be described in the appendix of contract agreement.
      *
      * @return $this
      */
@@ -1021,7 +1021,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets external_payment_methods
      *
-     * @return \Klarna\Model\PaymentProvider[]
+     * @return \Klarna\Checkout\Model\PaymentProvider[]
      */
     public function getExternalPaymentMethods()
     {
@@ -1031,7 +1031,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets external_payment_methods
      *
-     * @param \Klarna\Model\PaymentProvider[] $external_payment_methods List of external payment methods that will be displayed as part of payment methods in the checkout.
+     * @param \Klarna\Checkout\Model\PaymentProvider[] $external_payment_methods List of external payment methods that will be displayed as part of payment methods in the checkout.
      *
      * @return $this
      */
@@ -1045,7 +1045,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets external_checkouts
      *
-     * @return \Klarna\Model\PaymentProvider[]
+     * @return \Klarna\Checkout\Model\PaymentProvider[]
      */
     public function getExternalCheckouts()
     {
@@ -1055,7 +1055,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets external_checkouts
      *
-     * @param \Klarna\Model\PaymentProvider[] $external_checkouts List of external checkouts that will be displayed as part of payment methods in the checkout.
+     * @param \Klarna\Checkout\Model\PaymentProvider[] $external_checkouts List of external checkouts that will be displayed as part of payment methods in the checkout.
      *
      * @return $this
      */
@@ -1093,7 +1093,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_options
      *
-     * @return \Klarna\Model\ShippingOption[]
+     * @return \Klarna\Checkout\Model\ShippingOption[]
      */
     public function getShippingOptions()
     {
@@ -1103,7 +1103,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_options
      *
-     * @param \Klarna\Model\ShippingOption[] $shipping_options A list of shipping options available for this order.
+     * @param \Klarna\Checkout\Model\ShippingOption[] $shipping_options A list of shipping options available for this order.
      *
      * @return $this
      */
@@ -1148,7 +1148,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets gui
      *
-     * @return \Klarna\Model\Gui
+     * @return \Klarna\Checkout\Model\Gui
      */
     public function getGui()
     {
@@ -1158,7 +1158,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets gui
      *
-     * @param \Klarna\Model\Gui $gui The gui object.
+     * @param \Klarna\Checkout\Model\Gui $gui The gui object.
      *
      * @return $this
      */
@@ -1172,7 +1172,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets merchant_requested
      *
-     * @return \Klarna\Model\MerchantRequested
+     * @return \Klarna\Checkout\Model\MerchantRequested
      */
     public function getMerchantRequested()
     {
@@ -1182,7 +1182,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets merchant_requested
      *
-     * @param \Klarna\Model\MerchantRequested $merchant_requested Provides information about the state of the fields requested by the merchant.
+     * @param \Klarna\Checkout\Model\MerchantRequested $merchant_requested Provides information about the state of the fields requested by the merchant.
      *
      * @return $this
      */
@@ -1196,7 +1196,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Gets selected_shipping_option
      *
-     * @return \Klarna\Model\ShippingOption
+     * @return \Klarna\Checkout\Model\ShippingOption
      */
     public function getSelectedShippingOption()
     {
@@ -1206,7 +1206,7 @@ class Order implements ModelInterface, ArrayAccess
     /**
      * Sets selected_shipping_option
      *
-     * @param \Klarna\Model\ShippingOption $selected_shipping_option Current shipping options selected by the customer.
+     * @param \Klarna\Checkout\Model\ShippingOption $selected_shipping_option Current shipping options selected by the customer.
      *
      * @return $this
      */

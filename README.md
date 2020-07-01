@@ -20,11 +20,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/twulkau/klarna-checkout.git"
+      "url": "https://github.com/twulkau/.git"
     }
   ],
   "require": {
-    "twulkau/klarna-checkout": "*@dev"
+    "twulkau/": "*@dev"
   }
 }
 ```
@@ -56,12 +56,12 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Klarna\Api\OrderApi(
+$apiInstance = new Klarna\Checkout\Api\OrderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Klarna\Model\Order(); // \Klarna\Model\Order | 
+$body = new \Klarna\Checkout\Model\Order(); // \Klarna\Checkout\Model\Order | 
 
 try {
     $result = $apiInstance->createOrderMerchant($body);

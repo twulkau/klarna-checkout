@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Klarna\Model;
+namespace Klarna\Checkout\Model;
 
 use \ArrayAccess;
-use \Klarna\ObjectSerializer;
+use \Klarna\Checkout\ObjectSerializer;
 
 /**
  * ShippingAttributes Class Doc Comment
  *
  * @category Class
- * @package  Klarna
+ * @package  Klarna\Checkout
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ShippingAttributes implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'weight' => 'int',
-        'dimensions' => '\Klarna\Model\Dimensions',
+        'dimensions' => '\Klarna\Checkout\Model\Dimensions',
         'tags' => 'string[]'
     ];
 
@@ -243,7 +243,7 @@ class ShippingAttributes implements ModelInterface, ArrayAccess
     /**
      * Gets dimensions
      *
-     * @return \Klarna\Model\Dimensions
+     * @return \Klarna\Checkout\Model\Dimensions
      */
     public function getDimensions()
     {
@@ -253,7 +253,7 @@ class ShippingAttributes implements ModelInterface, ArrayAccess
     /**
      * Sets dimensions
      *
-     * @param \Klarna\Model\Dimensions $dimensions The product's dimensions: height, width and length. Of type Long.
+     * @param \Klarna\Checkout\Model\Dimensions $dimensions The product's dimensions: height, width and length. Of type Long.
      *
      * @return $this
      */
